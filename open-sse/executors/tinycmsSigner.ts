@@ -449,7 +449,11 @@ async function __wbg_init(module_or_path) {
     }
 
     if (module_or_path === undefined) {
-        module_or_path = new URL('wasm_signer_bg.wasm', import.meta.url);
+        try {
+            module_or_path = new URL("wasm_signer_bg.wasm", import.meta.url);
+        } catch {
+            module_or_path = "";
+        }
     }
     const imports = __wbg_get_imports();
 
