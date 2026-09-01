@@ -216,6 +216,24 @@ const TOOLS_GROUP: SidebarItemGroup = {
   titleFallback: "Tools",
   items: [
     {
+      id: "setup",
+      href: "/dashboard/setup",
+      i18nKey: "setup",
+      labelFallback: "Quick Setup",
+      subtitleKey: "setupSubtitle",
+      subtitleFallback: "Configure AI clients",
+      icon: "magic_button",
+    },
+    {
+      id: "mcp-hub",
+      href: "/dashboard/mcp-hub",
+      i18nKey: "mcpHub",
+      labelFallback: "MCP Hub",
+      subtitleKey: "mcpHubSubtitle",
+      subtitleFallback: "Multiplexed MCP gateway",
+      icon: "hub",
+    },
+    {
       id: "cli-code",
       href: "/dashboard/cli-code",
       i18nKey: "cliCode",
@@ -364,6 +382,15 @@ const MONITORING_ITEMS: readonly SidebarItemDefinition[] = [
     i18nKey: "activity",
     subtitleKey: "activitySubtitle",
     icon: "timeline",
+  },
+  {
+    id: "history",
+    href: "/dashboard/history",
+    i18nKey: "history",
+    labelFallback: "Conversation History",
+    subtitleKey: "historySubtitle",
+    subtitleFallback: "Logs & transcripts",
+    icon: "history",
   },
 ];
 

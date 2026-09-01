@@ -25,6 +25,8 @@ export const HIDEABLE_SIDEBAR_ITEM_IDS = [
   "compression-studio",
   "compression-exclusions",
   // OmniProxy > Tools
+  "setup",
+  "mcp-hub",
   "cli-code",
   "cli-agents",
   "acp-agents",
@@ -50,6 +52,7 @@ export const HIDEABLE_SIDEBAR_ITEM_IDS = [
   "provider-stats",
   // Monitoring — flat
   "activity",
+  "history",
   "logs",
   "logs-proxy",
   "logs-console",
